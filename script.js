@@ -7,7 +7,7 @@ const modalClose = document.querySelector("#modal i");
 const modalNavs = document.querySelectorAll("#modal div a");
 
 window.addEventListener("load",function(){
-    preloader.classList.add("remove");
+    // preloader.classList.add("remove");
     wrapper.classList.remove("remove");
     
 });
