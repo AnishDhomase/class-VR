@@ -1,0 +1,1110 @@
+/* Fonts imported */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@400;500;700&display=swap');
+
+/* Global settings */
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(38, 18, 50);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(186, 147, 221);
+    border-radius: 20px;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    color: white;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img#theme{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+section{
+    padding: 0 9vw;
+}
+section.secWithHeight{
+    height: 100vh;
+}
+
+/* Fast Scroller */
+#fast-scroll img{
+    height: 55px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    scale: 0.85;
+}
+#fast-scroll img:hover {
+    opacity: 0.8;
+    background-color: white;
+    scale: 0.95;
+}
+
+/* navbar */
+nav{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 9vw;
+    background-color: rgba(130, 89, 168, 0.08);
+}
+nav .logo{
+    font-size: 35px;
+    font-family: 'Black Ops One', cursive;
+    /* color: rgb(232, 228, 198); */
+}
+nav .logo span{
+    /* color: rgb(136, 122, 43); */
+}
+nav .navBtnDiv a#navDiff{
+    color: rgb(213, 108, 255);
+}
+nav .navBtnDiv a{
+    margin-left: 19px;
+}
+nav .navBtnDiv a:hover{
+    opacity: 0.8;
+    
+}
+nav .navBtnDiv i{
+    display: none;
+    font-size: 25px;
+    color: rgb(213, 108, 255);
+}
+nav .navBtnDiv i:hover{
+    cursor: pointer;
+    color: white;
+    
+}
+
+/* Preloader */
+#preloader{
+    background: transparent url(pre1.gif) no-repeat center center;
+    background-size:70px ;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    position: fixed;
+}
+
+
+
+/* home  */
+#home{
+    display: flex;
+}
+#home .lhs{
+    /* border: 1px solid white; */
+    width: 50%;
+    position: relative;
+}
+#home .lhs img.mainImg{
+    width: 100%;
+    opacity: 0.9;
+}
+#home .lhs img.subImg{
+    position: absolute;
+    width: 25%;
+    opacity: 0.95;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#home .lhs img.subImg#saturn{
+    top: 3%;
+    right: -10%;
+    animation-name: float1;
+    width: 26%;
+}
+#home .lhs img.subImg#astronaut{
+    top: 55%;
+    right: 10%;
+    animation-name: float2;
+    opacity: 0.75;
+}
+#home .lhs img.subImg#comet{
+    bottom: 5%;
+    left: 0%;
+    animation-name: float2;
+    opacity: 0.75;
+    
+}
+
+
+#home .rhs{
+    /* border: 1px solid white; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 35px;
+}
+#home .rhs h1{
+    font-size: 55px;
+}
+#home .rhs h1 span{
+    vertical-align: middle;
+    display: inline-block;
+    height: 50px;
+    width: 80px;
+    border: 3px solid rgb(187, 184, 184);
+    background-color: rgb(109, 107, 105);
+    border-radius: 40px;
+    position: relative;
+    padding: 15px;
+}
+#home .rhs h1 span img{
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+}
+#home .rhs h3{
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(184, 175, 175);
+}
+#home .rhs .quicks{
+    margin-top: 30px;
+}
+#home .rhs .quicks a{
+    border: 2px solid rgb(187, 184, 184);
+    background-color: transparent;
+    color: antiquewhite;
+    border-radius: 40px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+#home .rhs .quicks a:hover{
+    color: rgb(47, 46, 46);
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(209, 183, 237);
+}
+#home .rhs .quicks a:first-child{
+
+    color: rgb(47, 46, 46);
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(209, 183, 237);
+}
+#home .rhs .quicks a:first-child:hover{
+    border: 2px solid rgb(187, 184, 184);
+    background-color: transparent;
+    color: antiquewhite;
+}
+
+
+
+
+
+/* Offers section */
+#offers{
+    padding: 18vh 0;
+}
+#offers .heads h1 {
+    text-align: center;
+   font-size: 40px;
+   font-weight: 700;
+}
+#offers .heads h3 {
+    margin-top: 10px;
+    text-align: center;
+   font-size: 18px;
+   font-weight: 100;
+   color: rgb(193, 188, 188);
+
+}
+#offers .heads h1 span{
+    text-align: start;
+    vertical-align: middle;
+    display: inline-block;
+    height: 50px;
+    width: 80px;
+    border: 3px solid rgb(187, 184, 184);
+    background-color: rgb(109, 107, 105);
+    border-radius: 40px;
+    position: relative;
+    padding: 15px;
+}
+#offers .heads h1 span img{
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+}
+#offers .cardSec{
+    padding: 7vh 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+#offers .cardSec .card{ 
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px 15px;
+    /* border: 1px solid rgb(143, 141, 141); */
+    border: 1px solid rgb(143, 141, 141,0.5);
+    background-color: rgb(171, 187, 181,0.15);
+}
+#offers .cardSec .card:hover{ 
+    /* background-color: rgb(220, 230, 238, 0.1); */
+}
+#offers .cardSec .card h2{ 
+    font-size: 19px;
+    font-weight: 900;
+    justify-content: center;
+    margin-top: 8px;
+}
+#offers .cardSec .card h4{ 
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(193, 188, 188);
+}
+#offers .cardSec .card img{ 
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* general one */
+#g1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+#g1 .lhs{
+    width: 50%;
+    text-align: center;
+
+}
+#g1 .lhs img{
+    width: 70%;
+    max-width: 350px;
+}
+#g1 .rhs{
+    width: 50%;
+}
+#g1 .rhs h1{
+    font-size: 40px;
+   font-weight: 700;
+}
+#g1 .rhs h3{
+    font-size: 18px;
+    font-weight: 100;
+    color: rgb(193, 188, 188);
+    margin-top: 20px;
+  
+
+}
+#g1 .rhs h1 span{
+    text-align: start;
+    vertical-align: middle;
+    display: inline-block;
+    height: 50px;
+    width: 80px;
+    border: 3px solid rgb(187, 184, 184);
+    background-color: rgb(109, 107, 105);
+    border-radius: 40px;
+    position: relative;
+    padding: 15px;
+}
+#g1 .rhs h1 span img{
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/* subjects section */
+#subjects{
+    padding: 12vh 0;
+}
+#subjects .heads h1 {
+    text-align: center;
+   font-size: 40px;
+   font-weight: 700;
+}
+#subjects .heads h1 span{
+    text-align: start;
+    vertical-align: middle;
+    display: inline-block;
+    height: 50px;
+    width: 80px;
+    border: 3px solid rgb(187, 184, 184);
+    background-color: rgb(109, 107, 105);
+    border-radius: 40px;
+    position: relative;
+    padding: 15px;
+}
+#subjects .heads h1 span img{
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+}
+#subjects .cardSec{
+    padding: 7vh 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#subjects .cardSec .card{ 
+    width: 300px;
+    border: 1px solid rgb(143, 141, 141,0.5);
+    background-color: rgb(171, 187, 181,0.15);
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 15px;
+    margin: 15px 15px;
+}
+
+#subjects .cardSec .card h2{ 
+    font-size: 19px;
+    font-weight: 900;
+    justify-content: center;
+    margin-top: 8px;
+}
+#subjects .cardSec .card h4{ 
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(193, 188, 188);
+}
+#subjects .cardSec .card img{ 
+    width: 100%;
+    border-radius: 10px;
+}
+#subjects .cardSec .card .foot{
+    margin-top: 30px;
+    margin-top: 10px;
+}
+#subjects .cardSec .card .foot a{
+    font-size: 13px;
+    padding: 7px 12px;
+    margin-right:3px;
+    font-weight: 500;
+    border-radius: 25px;
+    color: rgb(141, 140, 140);
+}
+#subjects .cardSec .card .foot a i{
+    color: rgb(200, 171, 11);
+}
+#subjects .cardSec .card .foot a:first-child{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(209, 183, 237);
+    color: black;
+    position: relative;
+}
+#subjects .cardSec .card .foot a:first-child:hover{
+    border: 2px solid rgb(187, 184, 184);
+    background-color: transparent;
+    color: antiquewhite;
+}
+
+
+
+
+/* general two */
+#g2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+#g2 .lhs{
+    width: 50%;
+    text-align: center;
+}
+#g2 .lhs img{
+    width: 70%;
+    max-width: 350px;
+}
+#g2 .rhs{
+    width: 50%;
+
+
+}
+#g2 .rhs h1{
+    font-size: 40px;
+   font-weight: 700;
+}
+#g2 .rhs h3{
+    font-size: 18px;
+    font-weight: 100;
+    color: rgb(193, 188, 188);
+    margin-top: 20px;
+  
+
+}
+#g2 .rhs h1 span{
+    text-align: start;
+    vertical-align: middle;
+    display: inline-block;
+    height: 50px;
+    width: 80px;
+    border: 3px solid rgb(187, 184, 184);
+    background-color: rgb(109, 107, 105);
+    border-radius: 40px;
+    position: relative;
+    padding: 15px;
+}
+#g2 .rhs h1 span img{
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+}
+#g2 .rhs .foot{
+    margin-top: 5px;
+}
+#g2 .rhs .foot div{
+    display: flex;
+    margin-top: 10px;
+}
+#g2 .rhs .foot div span{
+    width: 40%;
+}
+#g2 .rhs .foot div span i{
+    color: goldenrod;
+}
+
+
+
+
+/* Join */
+#join{
+    padding: 10vh 9vw;
+
+}
+#join .up .brands img{
+    height: 50px;
+    margin: 40px 30px;
+}
+#join .up .brands{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+#join .up h1{
+    font-size: 20px;
+    font-weight: 200;
+    color: gray;
+    text-align: center;
+}
+#join .up h1 span{
+    text-decoration: underline;
+    margin: 0 2px;
+}
+#join .down{
+    display: flex;
+    justify-content: center;
+
+}
+#join .down #boxForm{
+    margin-top: 40px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    padding: 5vh 5vw;
+    border: 1px solid rgb(143, 141, 141,0.5);
+    background-color: rgb(171, 187, 181,0.15);
+}
+#join .down #boxForm:hover{
+    /* background-color: rgb(220, 230, 238, 0.1); */
+}
+#join .down #boxForm h1{
+    font-size: 40px;
+    text-align: center;
+}
+#join .down #boxForm form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#join .down #boxForm form input{
+    max-width: 300px;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 2px;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+    border: 2px solid rgb(84, 79, 79);
+    background-color: transparent;
+    background-color: rgb(234, 222, 222,0.1);
+
+
+}
+#join .down #boxForm form input::placeholder{
+    color: rgb(215, 204, 255);
+}
+#join .down #boxForm form button{
+    padding: 8px 17px;
+    color: black;
+    border-radius: 2px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    border: 2px solid white;
+    background-color: white;
+}
+#join .down #boxForm form button:hover{
+   cursor: pointer;
+   scale: 0.95;
+}
+
+
+/* Footer */
+footer{
+    background-color: rgba(31, 0, 126, 0.4);
+    padding: 4vh 9vw;
+}
+footer h2{
+    font-size: 29px;
+    font-family: 'Black Ops One', cursive;
+   
+}
+footer #up{
+    display: flex;
+    justify-content: space-between;
+}
+footer #up #brand div{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: rgb(206, 205, 205);
+}
+footer #up span{ 
+    width: 35%;
+}
+footer #up span#social span{ 
+    text-align: end;
+}
+footer #up span#social div{ 
+    text-align: end;
+}
+footer #up span#social div a{ 
+    margin: 0 10px;
+}
+footer #up span#social div a i{ 
+    font-size: 25px;
+    color: rgb(144, 14, 225);
+}
+footer #up span#social div a i:hover{ 
+    scale: 1.1;
+}
+footer div#down{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin: 8px 0 5px 0;
+
+}
+
+
+.remove{
+    display: none;
+}
+/* wrapper */
+#wrapper{
+    
+}
+
+/* modal */
+#modal{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#modal div{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+#modal div a{
+    font-size: 36px;
+    font-weight: 700;
+    margin: 9px 0;
+    /* border: 3px solid rgba(194, 194, 215, 0.3); */
+    background-color: transparent;
+    padding: 5px 20px;
+    border-radius: 3px;
+    position: relative;
+    transition: all 0.3s ease;
+
+}
+#modal div a:hover{
+   color: rgb(11, 0, 45);
+}
+#modal div a::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0%;
+   height: 100%;
+   border-radius: 30px;
+   border-radius: 3px;
+
+   z-index: -1;
+    transition: width 0.3s ease;
+}
+#modal div a:hover::before{
+    background-color: rgba(191, 196, 218, 0.2);
+    width: 100%;
+}
+#modal div a::after{
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 0%;
+   height: 100%;
+   border-radius: 30px;
+   border-radius: 3px;
+
+   z-index: -1;
+    transition: width 0.3s ease;
+}
+#modal div a:hover::after{
+    background-color: rgba(191, 196, 218, 0.2);
+    width: 100%;
+}
+#modal div i{
+    font-size: 40px;
+    padding: 5px 10px;
+    border-radius: 190px ;
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    opacity: 0.8;
+    color: rgb(11, 0, 45);
+    background-color: rgba(191, 196, 218, 0.5);
+}
+#modal div i:hover{
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+   
+}
+
+
+
+
+/* animations */
+@keyframes float1{
+    0%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+}
+@keyframes float2{
+    0%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+
+
+@media screen and (min-width:1000px){
+    
+    html{
+        scroll-snap-type: y mandatory;
+    }
+    section, nav, footer{
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+    #g1 .lhs{
+        width: 40%;
+        text-align: end;
+    
+    }
+    #g1 .lhs img{
+       margin-right: 40px;
+    
+    }
+    #g2 .lhs{
+        width: 40%;
+        text-align: end;
+    
+    }
+    #g2 .lhs img{
+       margin-right: 40px;
+    
+    }
+}
+@media screen and (max-width:1000px){
+    #fast-scroll{
+        display: none;
+    }
+    #home .rhs h1{
+        font-size: 45px;
+    }
+    #home .rhs h1 span{
+        display: inline-block;
+        height: 50px;
+        width: 80px;
+    }
+    #offers{
+        padding: 18vh 0;
+        height: auto;
+    }
+    #offers .cardSec .card{ 
+        width: 200px;
+        padding: 10px;
+        margin: 10px 5px;
+    }
+    #g1{
+        padding: 18vh 0;
+        height: auto;
+    }
+    #subjects{
+        padding: 18vh 0;
+        height: auto;
+    }
+    #g2{
+        padding: 18vh 0;
+        height: auto;
+    }
+    #join{
+        padding: 10vh 9vw;
+        height: auto;
+    }
+}
+@media screen and (max-width:870px){
+    #home .rhs h1{
+        font-size: 40px;
+    }
+    #home .rhs h1 span{
+        display: inline-block;
+        height: 50px;
+        width: 80px;
+        border: 3px solid rgb(187, 184, 184);
+        background-color: rgb(109, 107, 105);
+        border-radius: 40px;
+        position: relative;
+        padding: 15px;
+    }
+    #g1 .rhs h1{
+        font-size: 30px;
+       font-weight: 700;
+    }
+    #g2 .rhs h1{
+        font-size: 30px;
+       font-weight: 700;
+    }
+} 
+@media screen and (max-width:850px){
+} 
+@media screen and (max-width:825px){
+    #home .rhs h1{
+        font-size: 34px;
+    }
+    nav .navBtnDiv a{
+        display: none;
+    }
+    nav .navBtnDiv i{
+        display: block;
+    }
+   
+    
+}
+@media screen and (max-width:775px){
+    #home{
+        display: flex;
+        flex-direction: column;
+    }
+    #home .lhs{
+        width: 50%;
+        position: relative;
+        margin: auto;
+    }
+    #home .rhs{
+        width: 100%;
+        padding-left: 0;
+    }
+    #home .lhs img.mainImg{
+        width: 100%;
+        opacity: 0.8;
+    }
+    #home .lhs img.subImg{
+        position: absolute;
+        width: 20%;
+        opacity: 0.6;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    #home .rhs h1 span{
+        display: none;
+    }
+    #home .rhs h1{
+        font-size: 45px;
+        text-align: center;
+    }
+    #home .rhs h3{
+        font-size: 16px;
+        font-weight: 100;
+        text-align: center;
+    }
+    #home .rhs .quicks{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    #offers .cardSec .card{ 
+        width: 280px;
+    }
+    #g1{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    #g1 .lhs{
+        width: 100%;
+    }
+    #g1 .rhs{
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    #g1 .rhs h1{
+        font-size: 35px;
+    }
+    #g1 .rhs h3{
+        font-size: 18px;
+    }
+    #offers .heads h1 span{
+        display: none;
+    }
+    #g1 .rhs h1 span{
+        display: none;
+    }
+    #subjects .heads h1 span{
+        display: none;
+    }
+    #g2 .rhs h1 span{
+        display: none;
+    }
+
+    #g2{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    #g2 .lhs{
+        width: 100%;
+    }
+    #g2 .rhs{
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    #g2 .rhs h1{
+        font-size: 35px;
+    }
+    #g2 .rhs h3{
+        font-size: 18px;
+    }
+    #g2 .rhs .foot div span{
+        text-align: start;
+    }
+    #g2 .rhs .foot div{
+        display: flex;
+        justify-content: center;
+    }
+    #g2 .rhs .foot div span{
+        width: 30%;
+    }
+    #join .down #boxForm h1{
+        font-size: 35px;
+    }
+    footer #up #brand div{
+        font-size: 12px;
+    }
+    footer #up span{ 
+        width: 50%;
+    }
+    footer div#down{
+        font-size: 11px;
+        margin: 8px 0 5px 0;
+    }
+    #home .lhs img.subImg{
+        width: 35%;
+    }
+   
+    
+   
+}
+
+@media screen and (max-width:650px){
+    #home .lhs{
+       width: 70%;
+    }
+    #subjects .heads h1 {
+       font-size: 36px;
+    }
+    #g2 .rhs .foot div span{
+        width: 35%;
+    }
+
+  
+}
+@media screen and (max-width:500px){
+    footer{
+        background-color: rgba(31, 0, 126, 0.4);
+        padding: 3vh 4vw;
+    }
+    footer div#down{
+        display: flex;
+        flex-direction: column;
+    }
+    footer #up{
+        display: flex;
+        flex-direction: column;
+    }
+    footer #up span{ 
+        width: 100%;
+        text-align: start;
+    }
+    footer #up span#social  div{ 
+        text-align: start;
+        margin: 10px 0;
+    }
+    footer #up span#social  div a{ 
+        margin-right: 20px;
+    }
+    footer div#down span{
+        margin-bottom: 5px;
+    }
+    #join{
+        padding: 15vh 9vw;
+    
+    }
+    #g2{
+        padding: 5vh 10px;
+    }
+    
+}
+@media screen and (max-width:450px){
+    #home .rhs h1{
+        font-size: 35px;
+        font-weight: 700;
+    }
+    #home .lhs{
+       margin-top:1px ;
+       width: 80%;
+    }
+    section{
+        padding: 0 2vw;
+    }
+    nav{
+        padding: 5vh 8vw;
+    }
+    #home .rhs h3{
+        margin-top: 7px;
+        font-size: 16px;
+    }
+    #offers{
+        padding: 10vh 0;
+        height: auto;
+    }
+    #offers .cardSec .card{ 
+        width: 250px;
+        padding: 10px;
+        margin: 10px 5px;
+    }
+    #offers .heads h1 {
+       font-size: 28px;
+
+    }
+    #g1 .rhs h1{
+        font-size: 28px;
+    }
+    #home{
+        margin-bottom: 100px;
+    }
+    #subjects .heads h1 {
+        font-size: 30px;
+    }
+    #subjects .cardSec .card{ 
+        width: 290px;
+    
+        margin: 20px 15px;
+    }
+    #g2 .rhs .foot div span{
+        width: 45%;
+        font-size: 16px;
+    }
+    #g2 .rhs h1{
+        font-size: 28px;
+    }
+    #g2 .rhs h3{
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    #join .up .brands img{
+        height: 40px;
+        margin: 20px 20px;
+    }
+    #join .up h1{
+        font-size: 16px;
+        font-weight: 200;
+    }
+    #join .down #boxForm h1{
+        font-size: 26px;
+    }
+    #join .down #boxForm{
+        margin-top: 40px;
+        border-radius: 20px;
+        padding: 2.5vh 2.5vw;
+        margin: 10px 20px;
+    }
+    footer #up span#social div a{ 
+        margin: 20px 5px;
+    }
+    footer #up span#social  div a{ 
+        margin-right: 20px;
+    }
+  
+    
+
+  
+}
